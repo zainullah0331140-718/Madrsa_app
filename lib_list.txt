@@ -1,0 +1,9 @@
+﻿C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\add_result.dart
+C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\add_student.dart
+C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\add_teacher.dart
+C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\database_helper.dart
+C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\edit_student.dart
+C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\main.dart
+C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\student_attendance.dart
+C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\student_list.dart
+C:\Users\Zain Ullah Haqqanii\StudioProjects\madarsa_app\lib\student_pdf.dart
