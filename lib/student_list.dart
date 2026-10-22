@@ -46,7 +46,8 @@ class _StudentListPageState extends State<StudentListPage> {
   }
 
   Future<void> _printStudent(Map<String, dynamic> student) async {
-    final id = student['id'] as int;
+    final id = int.tryParse('${student['id']}') ?? 0;
+    if (id == 0) return;
     setState(() => _printing.add(id));
     try {
       await StudentPdfService.printProfile(context, student);
@@ -209,7 +210,9 @@ class _StudentListPageState extends State<StudentListPage> {
                                   TextButton(
                                     onPressed: () {
                                       Navigator.pop(context);
-                                      _deleteStudent(student['id']);
+                                      final sid =
+                                          int.tryParse('${student['id']}');
+                                      if (sid != null) _deleteStudent(sid);
                                     },
                                     child: Text(s.yesDelete,
                                         style:

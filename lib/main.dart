@@ -511,7 +511,12 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Icon(m.icon, size: 20, color: m.accent),
                   const SizedBox(width: 10),
-                  Text(m.label),
+                  Expanded(
+                    child: Text(
+                      m.label,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
                 ],
               ),
             ),

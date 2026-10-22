@@ -38,6 +38,28 @@ class _AddStudentPageState extends State<AddStudentPage> {
   bool isGraduate = false;
   String? photoPath;
 
+  @override
+  void dispose() {
+    nameCtrl.dispose();
+    fnameCtrl.dispose();
+    casteCtrl.dispose();
+    cnicCtrl.dispose();
+    dobCtrl.dispose();
+    ageCtrl.dispose();
+    admissionDateCtrl.dispose();
+    regNoCtrl.dispose();
+    currentAddressCtrl.dispose();
+    currentDistrictCtrl.dispose();
+    permanentAddressCtrl.dispose();
+    permanentDistrictCtrl.dispose();
+    phoneCtrl.dispose();
+    modernEduCtrl.dispose();
+    otherCoursesCtrl.dispose();
+    dischargeDateCtrl.dispose();
+    classNameCtrl.dispose();
+    super.dispose();
+  }
+
   Future<void> _selectDate(BuildContext context, TextEditingController controller) async {
     DateTime? picked = await showDatePicker(
       context: context,
